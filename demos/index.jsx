@@ -5,6 +5,7 @@ import {Route, IndexRedirect, IndexRoute, Link} from 'react-router'
 import Scratchpad from './scratchpad'
 import Whiteboard from './whiteboard'
 import Chat from './chat'
+import Editor from './editor'
 
 const Index = ({children}) => <div>
   <h1>Demos!</h1>
@@ -31,4 +32,5 @@ export default <Route path="/demos" component={({children}) => children}>
   <Route path='scratchpad/:title' component={Scratchpad}/>
   <Route path='whiteboard/:title' component={Whiteboard}/>
   <Route path='chat/:room' component={Chat}/>
+  <Route path='editor' component={Editor}/>
 </Route>
