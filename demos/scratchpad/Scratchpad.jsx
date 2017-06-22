@@ -23,8 +23,10 @@ export default class extends React.Component {
     if (this.unsubscribe) this.unsubscribe()
 
     // Whenever our ref's value changes, set {value} on our state.
-    const listener = fireRef.on('value', snapshot =>
-      this.setState({value: snapshot.val()}))
+    const listener = fireRef.on('value', snapshot => {
+      console.log("listener fired with DataSnapshot:",snapshot);
+      this.setState({value: snapshot.val()})
+    })
 
     // Set unsubscribe to be a function that detaches the listener.
     this.unsubscribe = () => fireRef.off('value', listener)
@@ -42,6 +44,7 @@ export default class extends React.Component {
 
   render() {
     const {value} = this.state || {}
+    console.log("state:",this.state);
     return (
       <textarea
         rows={10}

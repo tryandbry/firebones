@@ -1,5 +1,5 @@
 {
-  "name": "__BONES_NEEDS_A_NAME__",
+  "name": "firebones",
   "version": "0.0.1",
   "description": "A happy little burning skeleton.",
   "main": "index.js",
@@ -48,6 +48,7 @@
     "check-node-version": "^1.1.2",
     "concurrently": "^3.1.0",
     "cookie-session": "^2.0.0-alpha.1",
+    "draft-js": "^0.10.1",
     "enzyme": "^2.5.1",
     "express": "^4.14.0",
     "finalhandler": "^1.0.0",
