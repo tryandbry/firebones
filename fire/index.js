@@ -1,24 +1,7 @@
 const firebase = require('firebase')
 
 // -- // -- // -- // Firebase Config // -- // -- // -- //
-/*
-const config = {
-  apiKey: 'AIzaSyBzz-Wq2dzMgM7E8cdSYnYoX5fbVUT-XQo',
-  authDomain: 'firebones-6bc2a.firebaseapp.com',
-  databaseURL: 'https://firebones-6bc2a.firebaseio.com',
-  projectId: 'firebones-6bc2a',
-  storageBucket: 'firebones-6bc2a.appspot.com',
-  messagingSenderId: '1030378391678'
-}
-*/
-const config = {
-  apiKey: 'AIzaSyBN5oakBtyS8Ii5wUyBOfWAebscYw8hbew',
-  authDomain: 'firebones-a322a.firebaseapp.com',
-  databaseURL: 'https://firebones-a322a.firebaseio.com/',
-  projectId: 'firebones-a322a',
-  storageBucket: 'firebones-a322a.appspot.com',
-  messagingSenderId: '858037763400'
-}
+const config = require('/home/bryan/.firebones.env');
 // -- // -- // -- // -- // -- // -- // -- // -- // -- //
 
 // Initialize the app, but make sure to do it only once.
